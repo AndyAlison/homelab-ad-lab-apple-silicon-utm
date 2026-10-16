@@ -43,6 +43,9 @@ Set `DisableCAD` = 1 (DWORD)
 Also fix VMware driver: `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\vmmouse` -> Start = 4
 
 ### 2. Install AD DS
-```powershell
+``powershell
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
-Install-ADDSForest -DomainName "homelab.local" -SafeModeAdministratorPassword (ConvertTo-SecureString "Password123!" -AsPlainText -Force) -Force
+Install-ADDSForest -DomainName "homelab.local" -SafeModeAdministratorPassword (ConvertTo-SecureString "Password123!" -AsPlainText -Force) -Force``
+
+### Screenshots 
+![IT Staff Users](./ITStaffUsers.png)
