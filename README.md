@@ -13,6 +13,7 @@ flowchart LR
     B --> C
     B --> D
     C <--> D
+```
 
 ## Architecture
 - **Host:** MacBook (Apple Silicon) - macOS + UTM Hypervisor
