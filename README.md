@@ -2,7 +2,7 @@
 
 > Built a complete Active Directory domain from scratch on a MacBook (Apple Silicon) using UTM. This project simulates a real small-business IT environment.
 
-``mermaid
+```mermaid
 flowchart LR
     A[MacBook - Apple Silicon\nmacOS + UTM] --> B[UTM Virtual Network\n192.168.64.0/24]
     B --> C[DC01\nWindows Server 2022\nDomain: homelab.local\nRoles: AD DS, DNS\n192.168.64.2]
