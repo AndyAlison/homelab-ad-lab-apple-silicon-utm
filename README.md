@@ -4,10 +4,15 @@
 
 ```mermaid
 flowchart LR
-    A[MacBook - Apple Silicon\nmacOS + UTM] --> B[UTM Virtual Network\n192.168.64.0/24]
-    B --> C[DC01\nWindows Server 2022\nDomain: homelab.local\nRoles: AD DS, DNS\n192.168.64.2]
-    B --> D[CLIENT01\nWindows 11 Pro\nDomain Joined]
-    C <-->|Domain Join & DNS| D
+    A[MacBook - Apple Silicon - macOS + UTM]
+    B[UTM Virtual Network - 192.168.64.0/24]
+    C[DC01 - Win Server 2022 - homelab.local - AD DS DNS]
+    D[CLIENT01 - Win 11 Pro - Domain Joined]
+    
+    A --> B
+    B --> C
+    B --> D
+    C <--> D
 
 ## Architecture
 - **Host:** MacBook (Apple Silicon) - macOS + UTM Hypervisor
