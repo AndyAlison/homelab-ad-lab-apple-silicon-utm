@@ -26,6 +26,8 @@ flowchart LR
 - [x] Promoted server to Domain Controller: `homelab.local`
 - [x] Configured DNS for internal domain resolution
 - [x] Created OU structure: `IT Staff`
+- [x] Joined Windows 11 client to domain - `homelab\jeremy` login working (see screenshot)
+- [x] Fixed DNS bug where client used fe80:: instead of DC IP 192.168.64.4
 - [x] Created 5+ domain users with PowerShell (automated)
 - [x] Bypassed Secure Boot Ctrl+Alt+Delete issue for ARM VMs via registry edit
 
@@ -49,3 +51,4 @@ Install-ADDSForest -DomainName "homelab.local" -SafeModeAdministratorPassword (C
 
 ### Screenshots 
 ![IT Staff Users](./ITStaffUsers.png)
+
