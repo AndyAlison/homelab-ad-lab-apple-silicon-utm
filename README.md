@@ -52,4 +52,4 @@ Install-ADDSForest -DomainName "homelab.local" -SafeModeAdministratorPassword (C
 ### Screenshots 
 ![IT Staff Users](./ITStaffUsers.png)
 ![Domain LogIn Proof](./homelab:jeremy.png) 
-![System info](.Domain.png)
+![System info](./Domain.png)
